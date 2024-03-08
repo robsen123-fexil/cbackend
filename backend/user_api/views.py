@@ -9,3 +9,5 @@ from rest_framework import viewsets
 class SongView(viewsets.ModelViewSet):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
+def index(request):
+    return render(request , "home.html")
